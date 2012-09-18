@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -u
+set -e
+
+PORT=7654
+
+abspath=$(cd "$(dirname "$1")"; pwd)
+fn=$(basename $1)
+path=${abspath}/${fn}
+# echo opening "http://localhost:${PORT}${path}"
+open "http://localhost:${PORT}${path}"
+

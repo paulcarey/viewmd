@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="icon" type="image/svg" href="/img/noun_project_4654_32x32.png">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+
+    <div id="content"></div>
+
+    <script src="/js/showdown.js"></script>
+    <script src="/js/jquery-1.8.1.min.js"></script>
+    <script>
+      var mdc = new Showdown.converter();
+
+      (function loadMd() {
+        var path = document.location.pathname
+        $.get('/ajax' + path, function (md) {
+          var html = mdc.makeHtml(md, true)
+          $('#content').html(html)
+          setTimeout(loadMd, 2000)
+        })
+      })()
+    </script>
+
+  </body>
+</html>
