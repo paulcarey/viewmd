@@ -19,7 +19,7 @@ Attribution
 -----------
 
 - Sinatra
-- Markdown
 - Showdown
-- The Notebook icon is by Scott Lewis, from The Noun Project.
+- The Notebook icon is by Scott Lewis, from [The Noun Project](http://thenounproject.com/).
+- [Midnight Theme](http://mattgraham.github.com/Midnight) 
 

@@ -2,12 +2,37 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel="icon" type="image/svg" href="/img/noun_project_4654_32x32.png">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/svg" href="/images/noun_project_4654_32x32.png">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/pygment_trac.css">
+    <style>
+
+      section {
+        margin-top: 15px;
+      }
+
+      section #title {
+        margin-bottom: 20px;
+      }
+
+      section #title h1 {
+        color: #fc0;
+        margin-bottom: 20px;
+      }
+
+    </style>
   </head>
   <body>
 
-    <div id="content"></div>
+    <div class="wrapper">
+      <section>
+        <div id="title">
+          <h1><%= title %></h1>
+          <hr>
+        </div>
+        <div id="content"></div>
+      </section>
+    </div>
 
     <script src="/js/showdown.js"></script>
     <script src="/js/jquery-1.8.1.min.js"></script>
